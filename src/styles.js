@@ -172,9 +172,9 @@ const styles = StyleSheet.create({
     zIndex: 1
   },
   headerBubbleButton: {
-    borderStyle: 'solid',
-    borderColor: "#8e28d6",
-    borderWidth: 12,
+    backgroundColor: "#8e28d6",
+    width: 50,
+    height:50,
     borderRadius: 100,
     marginLeft: 10,
     alignItems: "center",

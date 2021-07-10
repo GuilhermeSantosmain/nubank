@@ -28,7 +28,7 @@ const App = () => {
     </NavigationContainer>
     */
 
-<Pix/>
+<Home/>
 
 
   )
