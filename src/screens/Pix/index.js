@@ -11,30 +11,17 @@ import {
 import styles from '../../styles';
 import PixHeader from '../../components/PixHeader';
 import PixBubbleButton from '../../components/PixBubbleButton';
+import PixLineButton from '../../components/PixLineButton';
 const Pix = () => {
 
     return (
-        <View>
+        <ScrollView style={styles.pix}>
 
             <PixHeader />
             <PixBubbleButton />
-
-
-            <View>
-                <View>
-                    <Icon color="#868686" size={25} name="diamond-stone" />
-                    <Text>Minhas chaves</Text>
-                </View>
-                <View>
-                    <Icon color="#868686" size={25} name="tune" />
-                    <Text>Meu limite Pix</Text>
-                </View>
-                <View>
-                    <Icon color="#868686" size={25} name="help-circle-outline" />
-                    <Text>Me ajuda</Text>
-                </View>
-            </View>
-        </View>
+            <PixLineButton />
+            
+        </ScrollView>
 
     )
 }

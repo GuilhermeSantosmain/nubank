@@ -2,14 +2,17 @@ import { StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
 
+  pix: {
+    backgroundColor: "#fff"
+  },
   pixHeaderMargin: {
     paddingLeft: 20,
     paddingTop: 12,
-    backgroundColor: "#ffffff"
+    maxHeight: 380
   },
   pixHeaderImage: {
     marginTop: 10,
-    marginBottom: 10,
+    marginBottom: 6,
     width: "52%",
     maxHeight: "52%",
     resizeMode: 'contain'
@@ -17,16 +20,42 @@ const styles = StyleSheet.create({
   pixHeaderTitle: {
     fontFamily: "Roboto-Bold",
     fontSize: 30,
-    marginLeft:4
+    marginLeft:4,
+    marginBottom:4
   },
   pixHeaderDescription: {
     fontFamily:"Roboto-Regular",
-    fontSize:18,
+    fontSize:19,
     color:"#868686",
-    marginLeft:4
+    marginLeft:4    
   },
   pixBubbleIcon:{
-    
+    backgroundColor: "#f0f1f5",
+    padding:22,
+    borderRadius:50
+  },
+  pixBubbleText: {
+    textAlign:"center",
+    marginTop: 10,
+    fontFamily: "Roboto-Bold",
+    color: "#232428"
+  },
+  pixBubbleButtons: {
+    marginBottom:40,
+  },
+  pixLineButtons: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    justifyContent: "space-between",
+    padding: 22,
+    backgroundColor:"#f0f1f5"
+  },
+  pixLineButtonsText:{
+    fontFamily:"Roboto-Bold",
+    fontSize:17,
+    marginLeft: 15,
+    alignSelf:"center",
+    color: "#232428"
   },
   card: {
     backgroundColor: "#fff",
@@ -108,6 +137,11 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     flexWrap: "wrap",
     justifyContent: "space-around"
+  },
+  rowSpaceEvenly: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    justifyContent: "space-evenly"
   },
   footerButtonIcon: {
     fontSize: 25
