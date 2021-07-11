@@ -4,7 +4,7 @@ const styles = StyleSheet.create({
 
   pix: {
     backgroundColor: "#fff",
-    borderRadius:15
+    borderRadius:10
   },
   pixBorderRadius:{
 backgroundColor: "#777"
