@@ -1,13 +1,11 @@
 import styles from '../../styles';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
-import React, { useState } from 'react';
+import React from 'react';
 import {
     TouchableOpacity,
     Image,
     Text,
     View,
-    ScrollView,
-    Button
 } from 'react-native';
 
 const PixHeader = (props) => {

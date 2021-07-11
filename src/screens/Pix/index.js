@@ -1,13 +1,5 @@
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
-import React, { useState } from 'react';
-import {
-    TouchableOpacity,
-    Image,
-    Text,
-    View,
-    ScrollView,
-    Button
-} from 'react-native';
+import React from 'react';
+import { ScrollView } from 'react-native';
 import styles from '../../styles';
 import PixHeader from '../../components/PixHeader';
 import PixBubbleButton from '../../components/PixBubbleButton';

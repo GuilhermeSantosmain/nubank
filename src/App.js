@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native'
 import Home from './screens/Home'
 import Pix from './screens/Pix'
-import Header from './components/Header';
 
 const Stack = createStackNavigator();
+
 const App = () => {
 
 
@@ -17,9 +17,6 @@ const App = () => {
         <Stack.Screen name="Pix" component={Pix} />
       </Stack.Navigator>
     </NavigationContainer>
-
-
-
   )
 }
 
