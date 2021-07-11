@@ -106,11 +106,13 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     paddingVertical: 10,
     paddingHorizontal: 15,
-    color: "#830ad1",
-    width: "auto", minWidth: 20,
+    width: "auto",
     alignSelf: "flex-start",
+    marginTop: 18,
+  },
+  cardButtonText:{
+    color: "#830ad1",
     fontFamily: "Roboto-Bold",
-    marginTop: 18
   },
   fundo: {
     backgroundColor: "#830ad1",

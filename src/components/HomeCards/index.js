@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import styles from '../../styles'
 import {
     Text,
@@ -111,7 +111,7 @@ const HomeCards = () => {
                         </View>
                     </View>
                     <Text style={styles.cardTextRegular}>Conheça a Nubank Vida: um seguro simples e que cabe no bolso.</Text>
-                    <TouchableOpacity onPress={() => setShouldShow(!shouldShow)} ><Text style={styles.cardButton}> CONHECER</Text></TouchableOpacity>
+                    <TouchableOpacity  style={styles.cardButton} onPress={() => setShouldShow(!shouldShow)} ><Text style={styles.cardButtonText}> CONHECER</Text></TouchableOpacity>
                 </View>
             </View>
 
@@ -130,7 +130,7 @@ const HomeCards = () => {
                     </View>
                     <Text style={[styles.cardTextStrong, { marginBottom: 15 }]}>Envie e receba dinheiro sem sair da conversa</Text>
                     <Text style={styles.cardTextRegular}>Os pagamentos no WhatsApp são seguros, rápidos e sem tarifas. Tão fácil quanto mandar uma foto de "bom dia" no grupo da família.</Text>
-                    <TouchableOpacity ><Text style={styles.cardButton}>Quero conhecer</Text></TouchableOpacity>
+                    <TouchableOpacity style={styles.cardButton} ><Text style={styles.cardButtonText} >Quero conhecer</Text></TouchableOpacity>
                 </View>
             </View>
 
@@ -148,7 +148,7 @@ const HomeCards = () => {
                         </View>
                     </View>
                     <Text style={styles.cardTextRegular}>Use o Google Pay com seus cartões Nubank</Text>
-                    <TouchableOpacity ><Text style={styles.cardButton}> REGISTRAR MEU CARTÃO</Text></TouchableOpacity>
+                    <TouchableOpacity style={styles.cardButton} ><Text style={styles.cardButtonText} > REGISTRAR MEU CARTÃO</Text></TouchableOpacity>
                 </View>
             </View>
 
@@ -166,7 +166,7 @@ const HomeCards = () => {
                         </View>
                     </View>
                     <Text style={styles.cardTextRegular}>A gente te ajuda a gerenciar suas finanças de um jeito fácil para fazer seu negócio acontecer.</Text>
-                    <TouchableOpacity ><Text style={styles.cardButton}> PEDIR CONTA PJ</Text></TouchableOpacity>
+                    <TouchableOpacity style={styles.cardButton} ><Text style={styles.cardButtonText} > PEDIR CONTA PJ</Text></TouchableOpacity>
                 </View>
             </View>
         </View>
