@@ -93,7 +93,12 @@ const HomeCards = (props) => {
                         </View>
                     </View>
                     <Text style={{ marginTop: 17, marginBottom: 3, fontFamily: "Roboto-Regular", fontSize: 15 }}>Valor disponivel de até</Text>
-                    <Text style={styles.cardTextStrong}>R$ 12.500.00</Text>
+                    {
+                        props.handler ? (
+                            <Text style={styles.cardTextStrong}>R$ 12.500.00</Text>
+                        ) : null
+                    }
+                    
                 </View>
             </View>
 
