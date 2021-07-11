@@ -9,20 +9,18 @@ import {
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import HomeCards from '../../components/HomeCards'
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { NavigationContainer } from '@react-navigation/native'
 
-const Home = () => {
+const Home = ({navigation}) => {
   return (
     <View style={styles.fundo}>
-      <Header />
+      <Header  />
       <ScrollView>
         <HomeCards/>
 
       </ScrollView>
 
-      <Footer />
+      <Footer nav={navigation}  />
     </View>
   )
 }

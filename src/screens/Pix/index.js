@@ -12,12 +12,12 @@ import styles from '../../styles';
 import PixHeader from '../../components/PixHeader';
 import PixBubbleButton from '../../components/PixBubbleButton';
 import PixLineButton from '../../components/PixLineButton';
-const Pix = () => {
+const Pix = ({navigation}) => {
 
     return (
         <ScrollView style={styles.pix}>
 
-            <PixHeader />
+            <PixHeader nav={navigation} />
             <PixBubbleButton />
             <PixLineButton />
             

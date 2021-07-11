@@ -10,12 +10,14 @@ import {
     Button
 } from 'react-native';
 
-const PixHeader = () => {
+const PixHeader = (props) => {
 
     return (
         <View style={styles.pixHeaderMargin}>
-            <Icon color="#868686" size={25} name="close" />
-            <Image  style={styles.pixHeaderImage} source={require('../../assets/img/pix-img.jpg')} />
+            <TouchableOpacity onPress={() => props.nav.navigate('Home')}>
+                <Icon color="#868686" size={25} name="close" />
+            </TouchableOpacity>
+            <Image style={styles.pixHeaderImage} source={require('../../assets/img/pix-img.jpg')} />
             <Text style={styles.pixHeaderTitle}>Minha área Pix</Text>
             <Text style={styles.pixHeaderDescription}>Tudo o que você precisa para pagar, transferir ou cobrar.</Text>
         </View>

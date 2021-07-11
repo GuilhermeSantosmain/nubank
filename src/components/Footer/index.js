@@ -7,7 +7,7 @@ import {
   View
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
-const Footer = () => {
+const Footer = (props) => {
   
   return (
 
@@ -15,7 +15,7 @@ const Footer = () => {
     <View style={styles.footer}>
       <ScrollView horizontal={true}>
         <View style={styles.row}>
-          <TouchableOpacity style={[styles.footerButtons, { marginLeft: 16 }]}>
+          <TouchableOpacity style={[styles.footerButtons, { marginLeft: 16 }]} onPress={() => props.nav.navigate('Pix')} >
             <Icon style={[styles.footerButtonsContent, styles.footerButtonIcon]} color="#fff" name="diamond-stone" size={20} />
             <Text style={styles.footerButtonsContent}>Pix</Text>
           </TouchableOpacity>
