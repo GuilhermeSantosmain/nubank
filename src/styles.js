@@ -3,7 +3,11 @@ import { StyleSheet } from 'react-native'
 const styles = StyleSheet.create({
 
   pix: {
-    backgroundColor: "#fff"
+    backgroundColor: "#fff",
+    borderRadius:15
+  },
+  pixBorderRadius:{
+backgroundColor: "#777"
   },
   pixHeaderMargin: {
     paddingLeft: 20,
