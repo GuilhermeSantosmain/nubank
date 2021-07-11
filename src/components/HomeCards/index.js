@@ -6,9 +6,9 @@ import {
     View
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
-const HomeCards = () => {
+const HomeCards = (props) => {
 
-    const [shouldShow, setShouldShow] = useState(true)
+    
     return (
         <View>
             <View style={[{ marginTop: 105 }, styles.card]}>
@@ -30,7 +30,7 @@ const HomeCards = () => {
                         Fatura atual
                     </Text>
                     {
-                        shouldShow ? (
+                        props.handler ? (
                             <Text style={styles.cardTextBoldBlue}>
                                 R$ 145,78
                             </Text>
@@ -41,7 +41,7 @@ const HomeCards = () => {
                             Limite disponível
                         </Text>
                         {
-                            shouldShow ? (
+                            props.handler ? (
 
                                 <Text style={styles.cardTextBoldGreen}>
                                     R$ 800,00
@@ -69,7 +69,7 @@ const HomeCards = () => {
                         Saldo disponível
                     </Text>
                     {
-                        shouldShow ? (
+                        props.handler ? (
                             <Text style={[styles.cardTextStrong, { fontSize: 25 }]}>
                                 R$ 185.420,93
                             </Text>
@@ -111,7 +111,7 @@ const HomeCards = () => {
                         </View>
                     </View>
                     <Text style={styles.cardTextRegular}>Conheça a Nubank Vida: um seguro simples e que cabe no bolso.</Text>
-                    <TouchableOpacity  style={styles.cardButton} onPress={() => setShouldShow(!shouldShow)} ><Text style={styles.cardButtonText}> CONHECER</Text></TouchableOpacity>
+                    <TouchableOpacity  style={styles.cardButton}  ><Text style={styles.cardButtonText}> CONHECER</Text></TouchableOpacity>
                 </View>
             </View>
 

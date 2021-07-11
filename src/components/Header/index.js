@@ -17,9 +17,7 @@ const Header = (props) => {
 
                 </View>
                 <View style={styles.headerButtons}>
-                    <TouchableOpacity style={styles.headerBubbleButton}>
-                        <Icon color="#fff" size={25} name="eye-off-outline" />
-                    </TouchableOpacity>
+                    {props.handler}
 
                     <TouchableOpacity style={styles.headerBubbleButton}>
                         <Icon color="#fff" size={25} name="cog-outline" />
